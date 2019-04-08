@@ -1,7 +1,11 @@
 <html>
+	<head>
+		 <script type="text/javascript" src="get_barcode_from_image.js"></script>
+	</head>
 <body>
 
-<p>Capture Image: <input type="file" accept="image/*" id="capture" capture="camera"> 
+<p>Capture Image: <input type="file" accept="image/*" id="capture" name="capture"  capture="camera"> 
 	
+	<center><button onclick="alert(getBarcodeFromImage('capture'))" style="width:300px;height100px">Scan</button></center>
 </body>
 </html>
